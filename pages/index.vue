@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import AppFilter from "@/components/appFilter.vue";
-import AppProduct from "@/components/appProduct.vue";
+import AppFilter from "./components/appFilter.vue";
+import AppProduct from "./components/appProduct.vue";
 
 export default {
   components: {
