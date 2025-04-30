@@ -57,7 +57,7 @@ export default {
   },
   build: {
     generate: {
-      dir: 'dist', 
+      dir: 'dist',
     },
     extend (config, ctx) {}
   }
