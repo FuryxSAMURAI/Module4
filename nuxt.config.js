@@ -1,9 +1,5 @@
-
 export default {
-  mode: 'universal',
-  /*
-  ** Headers of the page
-  */
+  target: 'static',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -18,29 +14,12 @@ export default {
       { src: "https://kit.fontawesome.com/ce82227861.js", crossorigin: "anonymous" }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
   css: [
     './assets/main.scss',
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
-  /*
-  ** Nuxt.js modules
-  */
+  plugins: [],
+  buildModules: [],
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/i18n',
@@ -70,20 +49,16 @@ export default {
       fallbackLocale: 'ua',
     },
     detectBrowserLanguage: {
-      useCookie: true, // зберігати мову в cookie
-      cookieKey: 'i18n_redirected', // ключ cookie
-      alwaysRedirect: true, // перенаправляти на правильну мову при заході
-      fallbackLocale: 'en' // запасна мова
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: true,
+      fallbackLocale: 'en'
     }
-  },  
-  /*
-  ** Build configuration
-  */
+  },
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
+    generate: {
+      dir: 'dist', 
+    },
+    extend (config, ctx) {}
   }
 }
