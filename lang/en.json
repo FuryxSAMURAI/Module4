@@ -1,0 +1,13 @@
+{
+    "addToCart": "Add to Cart",
+    "price": "Price",
+    "category": "Category",
+    "pages":"Pages",
+    "clearFilters":"Clear filters",
+    "sortBy":"Sort by price",
+    "lowToHigh":"Low to high",
+    "highToLow":"High to low",
+    "description":"Description",
+    "rate":"Rate",
+    "count":"Count"
+}

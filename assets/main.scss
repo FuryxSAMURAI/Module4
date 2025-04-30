@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+// font-family: "Roboto Mono", monospace;
+// font-optical-sizing: auto;
+// font-weight: <weight>;
+// font-style: normal;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  &__header {
+    height: 60px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      font-size: 48px;
+      font-weight: bold;
+    }
+    li a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  &__main {
+    &-blocks {
+      display: flex;
+    }
+    &-filter-block {
+      width: 15vw;
+      margin: 0 20px;
+    }
+    &-product-blocks {
+      margin: 0 40px;
+      width: 80vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    &-product-block {
+      margin: 0 20px;
+      width: 300px;
+      &-image {
+        height: 350px;
+        width: 300px;
+      }
+      &-title {
+        margin-top: 10px;
+        font-size: 22px;
+        height: 130px;
+      }
+      &-price {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &-cost {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        &-addToCart {
+          border: none;
+          background-color: transparent;
+        }
+      }
+    }
+    &-about-block{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 40px;
+      margin: 0 auto;
+      &-img{
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        img{
+          height: 60%;
+          width: auto;
+        }
+      }
+      &-desc{
+        margin: 0 40px;
+        &-title{
+          margin-top: 40px;
+          font-size: 36px;
+          font-weight: bold;
+        }
+        &-description{
+          margin-top: 40px;
+          font-size: 18px;
+        }
+        &-category{
+          font-size: 18px;
+          margin-top: 10px;
+
+        }
+        &-price{
+          display: flex;
+          margin-top: 40px;
+          div{
+            font-size: 28px;
+            font-weight: bold;
+          }
+          button{
+            background-color: transparent;
+            border: 1px solid #000;
+            margin-left: 100px;
+            width: 20vw;
+            cursor: pointer;
+          }
+        }
+        &-rating{
+          margin-top: 10px;
+          display: flex;
+          font-size: 18px;
+          &-rate{
+            
+          }
+          &-count{
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}
