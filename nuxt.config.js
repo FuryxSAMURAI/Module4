@@ -55,10 +55,8 @@ export default {
       fallbackLocale: 'en'
     }
   },
+  buildDir: 'dist',
   build: {
-    generate: {
-      dir: 'dist',
-    },
     extend (config, ctx) {}
   }
 }
