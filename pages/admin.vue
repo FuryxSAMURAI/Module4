@@ -1,5 +1,5 @@
 <script>
-import AppAdmin from './components/Admin/AppAdmin.vue';
+import AppAdmin from '@/components/Admin/AppAdmin.vue';
 
 export default {
   components: {
